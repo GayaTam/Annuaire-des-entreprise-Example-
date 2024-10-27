@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annuaire</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><span>Annuaire</span>Entreprise</a>
+      <div class="menutoggle" onclick="toggleMenu();"></div>
+      <ul class="navbar">
+        <li><a href="#ban" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#Transport" onclick="toggleMenu();">Transport</a></li>
+        <li><a href="#Industrie" onclick="toggleMenu();">Industrie</a></li>
+        <li><a href="#Santé" onclick="toggleMenu();">Santé</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Autres</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li>
+          <a href="#contact" class="btn-contact" onclick="toggleMenu();"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section class="ban" id="ban">
+      <div class="contenu">
+        <h2>Trouver votre entreprise en un seul clic !</h2>
+        <p>
+          Ce site vous facilite la tâche de trouver n'importe quelle entreprise
+          que vous voulez dans votre ville (Industrie, Santé, Transport...) avec
+          toute simplicité et rapidité.
+        </p>
+        <a href="#" class="btn1">S'inscrire</a>
+        <a href="#" class="btn2">Se connecter</a>
+        <div class="recherche">
+          <form action="">
+            <div>
+              <label>Pays</label>
+              <input type="text" placeholder="Entrez un pays" />
+            </div>
+            <div>
+              <label>Ville</label>
+              <input type="text" placeholder="Entrez une ville" />
+            </div>
+            <div>
+              <label>Catégorie</label>
+              <input
+                type="text"
+                placeholder="Entrez la catégorie de l'entreprise"
+              />
+            </div>
+            <input type="submit" value="Résultat" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="Santé">
+      <h1 class="titre">Santé:</h1>
+      <div class="img-hopital">
+        <input type="submit" value="Clinique & Hopitaux" />
+      </div>
+      <div class="img-pharmacie">
+        <input type="submit" value="Pharmacie" />
+      </div>
+      <div class="img-laboratoire">
+        <input type="submit" value="Laboratoire médical" />
+      </div>
+    </section>
+
+    <section id="Industrie">
+      <h1 class="titre2">Industrie:</h1>
+      <div class="img-alimentation">
+        <input type="submit" value="Alimentation" />
+      </div>
+      <div class="img-Electro">
+        <input type="submit" value="Électroménager" />
+      </div>
+      <div class="img-automobile">
+        <input type="submit" value="Automobile" />
+      </div>
+    </section>
+
+    <section id="Transport">
+      <h1 class="titre3">Transport:</h1>
+      <div class="img-taxi">
+        <input type="submit" value="TAXI" />
+      </div>
+      <div class="img-bus">
+        <input type="submit" value="BUS" />
+      </div>
+      <div class="img-train">
+        <input type="submit" value="TRAIN" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="Tcontact">
+        <h1 class="titre4">Contact:</h1>
+      </div>
+      <form action="">
+        <div class="left-right">
+          <div class="left">
+            <label>Nom complet</label>
+            <input type="text" />
+            <label>Objet</label>
+            <input type="text" />
+            <label>Email</label>
+            <input type="text" />
+            <label>Message</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="right">
+            <label>Numéro</label>
+            <input type="text" />
+            <label>Date</label>
+            <input type="text" />
+            <label>Autres détails</label>
+            <input type="text" />
+            <label>Adresse</label>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.991440608142!2d2.2922926150874177!3d48.85837360866285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1672256283831!5m2!1sfr!2sdz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <button>Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Réalisé par <span>Tamdjiat Med Gaya</span></p>
+    </footer>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        const menutoggle = document.querySelector(".menutoggle");
+        const navbar = document.querySelector(".navbar");
+        menutoggle.classList.toggle("active");
+        navbar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

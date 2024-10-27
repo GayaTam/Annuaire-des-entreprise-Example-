@@ -1,0 +1,641 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: #1111;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
+.logo span {
+  color: chocolate;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 700;
+}
+.btn-contact {
+  padding: 5px 14px;
+  background-color: chocolate;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+.btn-contact:hover {
+  background: #f1c799;
+  transition: ease-out;
+}
+header .navbar li a:hover {
+  color: chocolate;
+  border-bottom: 2px solid chocolate;
+}
+.ban {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../TP3\ Site\ web/simg.jpg");
+  background-size: cover;
+}
+.ban .contenu {
+  max-width: 70%;
+  text-align: center;
+}
+.ban .contenu h2 {
+  color: rgb(248, 241, 241);
+  font-size: 3em;
+  text-transform: capitalize;
+}
+.contenu p:nth-child(2) {
+  color: rgb(248, 217, 217);
+  font-size: 1.2em;
+}
+
+.btn1 {
+  font-size: 1em;
+  color: #fff;
+  background-color: chocolate;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.btn2 {
+  font-size: 1em;
+  color: #fff;
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+.btn1:hover {
+  letter-spacing: 4px;
+  background: #c4dff5;
+}
+.btn2:hover:hover {
+  letter-spacing: 4px;
+  background: rgb(241, 201, 172);
+}
+.recherche {
+  background-color: #2a4963;
+  padding: 20px;
+  width: 70%;
+  position: absolute;
+  bottom: 52px;
+}
+
+.recherche form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.recherche form div,
+.recherche form input[type="submit"] {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.recherche form label {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+.recherche form input {
+  padding: 5px 20px;
+  background-color: transparent;
+  border: 1px solid chocolate;
+  outline: 0;
+  width: 100%;
+  font-size: 15px;
+  color: #fff;
+}
+
+.recherche form input[type="submit"] {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(236, 199, 172);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.recherche form input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+}
+.Santé {
+  margin-top: 100px;
+  padding: 0 10%;
+  width: 100%;
+}
+.titre {
+  text-transform: capitalize;
+  margin: 25px 0;
+  font-weight: bold;
+  color: rgb(209, 245, 201);
+  position: relative;
+  margin-left: 10px;
+  font-size: 50px;
+}
+.titre::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: rgb(245, 202, 202);
+  width: 5px;
+}
+.img-hopital {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/hopital.jpg");
+  background-position: left;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 10px;
+  margin-left: 10px;
+}
+.img-hopital input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 350px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 50px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+
+.img-hopital input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.img-pharmacie {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/pharmacie.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 410px;
+  margin-left: 457px;
+}
+
+.img-pharmacie input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 350px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 110px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+
+.img-pharmacie input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+.img-laboratoire {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/Laboratoire.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 811px;
+  margin-left: 900px;
+}
+
+.img-laboratoire input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 353px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 70px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+.img-laboratoire input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.titre2 {
+  text-transform: capitalize;
+  margin: 25px 0;
+  font-weight: bold;
+  color: rgb(146, 108, 25);
+  position: relative;
+  margin-left: 10px;
+  font-size: 50px;
+  margin-top: -100px;
+  bottom: 690px;
+}
+.titre2::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: rgb(245, 202, 202);
+  width: 5px;
+}
+
+.img-alimentation {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/Alimentation.jpg");
+  background-position: left;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 700px;
+  margin-left: 10px;
+}
+.img-alimentation input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 350px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 100px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+
+.img-alimentation input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.img-Electro {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/elctero.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 1100px;
+  margin-left: 457px;
+}
+
+.img-Electro input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 350px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 80px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+
+.img-Electro input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.img-automobile {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/car.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 1500px;
+  margin-left: 900px;
+}
+
+.img-automobile input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 345px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 120px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+.img-automobile input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.titre3 {
+  text-transform: capitalize;
+  margin: 25px 0;
+  font-weight: bold;
+  color: rgb(53, 181, 231);
+  position: relative;
+  margin-left: 10px;
+  font-size: 50px;
+  bottom: 1500px;
+}
+.titre::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: rgb(245, 202, 202);
+  width: 5px;
+}
+
+.img-taxi {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/taxi.jpg");
+  background-position: left;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 1500px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.img-taxi input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 350px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 140px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+
+.img-taxi input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.img-bus {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/bus.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 1898px;
+  margin-left: 457px;
+}
+
+.img-bus input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 350px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 160px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+
+.img-bus input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+.img-train {
+  position: relative;
+  background-image: url("../TP3\ Site\ web/train.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  bottom: 2297px;
+  margin-left: 900px;
+}
+
+.img-train input[type="submit"] {
+  font-size: 1em;
+  color: rgb(240, 236, 224);
+  background-color: #2a4963;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 345px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 170px;
+  align-items: center;
+  border: 1px solid rgb(236, 197, 168);
+  cursor: pointer;
+}
+.img-train input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgb(241, 201, 172);
+  background: chocolate;
+  letter-spacing: 3px;
+}
+
+#contact {
+  padding: 0 10%;
+  margin-bottom: 50px;
+  height: 90vh;
+}
+
+#contact form {
+  background-color: #2a4963;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: -2200px;
+}
+
+.left-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-right .left,
+.left-right .right {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+#contact form label {
+  font-size: 14px;
+  padding: 10px 0;
+  font-size: 600;
+}
+#contact form input {
+  padding: 8px;
+  outline: 0;
+  border: 1px solid #999;
+}
+textarea {
+  height: 150px;
+  resize: none;
+  outline: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+#contact form input:focus,
+textarea:focus {
+  border: 2px solid #e2b154;
+}
+
+iframe {
+  height: 150px;
+  width: 100%;
+}
+
+.titre4 {
+  text-transform: capitalize;
+  margin: 25px 0;
+  font-weight: bold;
+  color: #2a4963;
+  position: relative;
+  margin-left: 10px;
+  font-size: 50px;
+  bottom: 2200px;
+  margin-top: 100px;
+}
+
+#contact button {
+  width: fit-content;
+  padding: 8px 40px;
+  background-color: #111;
+  border: 1px solid #111;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5;
+}
+
+#contact button:hover {
+  letter-spacing: 1px;
+}
+footer {
+  width: 100%;
+  background-color: #222;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+footer p span {
+  color: #29d9d5;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo {
+  color: rgb(0, 0, 0);
+}
+header.sticky .navbar li a {
+  color: #000;
+}
+header.sticky li a:hover {
+  color: chocolate;
+  border-bottom: 2px solid chocolate;
+}
